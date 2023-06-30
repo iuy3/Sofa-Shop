@@ -1,0 +1,60 @@
+.item {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 6fr repeat(3, 1fr);
+  grid-column-gap: 0px;
+  grid-row-gap: 0px;
+}
+
+.frame {
+  height: 300px;
+  display: flex;
+  justify-content: end;
+  flex-wrap: wrap;
+  align-content: end;
+  background-color: rgb(221, 221, 221);
+  svg {
+    width: 30px;
+    height: 30px;
+  }
+  margin-bottom: 20px;
+}
+
+.title {
+  margin-left: 20px;
+  margin-top: 10px;
+}
+
+.price {
+  width: 300px;
+  margin-left: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  s {
+    opacity: 0.3;
+  }
+}
+
+.view {
+  margin-left: 20px;
+  border: solid 2px black;
+  width: 160px;
+  margin-bottom: 10px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: 0.3s ease-in-out;
+  span {
+    width: auto;
+    margin: 0;
+    transition: 0.3s ease-in-out;
+  }
+
+  &:hover {
+    background-color: black;
+    color: rgb(255, 255, 255);
+    transition: 0.1s ease-in-out;
+  }
+}

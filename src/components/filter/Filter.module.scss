@@ -1,0 +1,51 @@
+.filter {
+  h1 {
+    display: flex;
+    justify-content: center;
+  }
+
+  .sortings {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    .filters {
+      ul {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        li {
+          list-style-type: none;
+          margin: 10px;
+          cursor: pointer;
+          border: solid 2px black;
+          padding: 5px;
+          transition: 0.3s ease-in-out;
+
+          user-select: none;
+
+          &:hover {
+            background-color: black;
+            color: white;
+          }
+        }
+      }
+    }
+
+    .sortBy {
+      display: flex;
+      align-items: center;
+
+      .byPopular {
+        margin-left: 10px;
+        display: flex;
+        align-items: center;
+      }
+
+      .byMechanism {
+        margin-right: 10px;
+        display: flex;
+        align-items: center;
+      }
+    }
+  }
+}

@@ -1,0 +1,41 @@
+.pagination {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  margin-top: 150px;
+  .viewMore {
+    padding: 10px;
+    border: 2px solid black;
+    transition: 0.3s ease-in-out;
+    &:hover {
+      transition: 0.3s ease-in-out;
+      background-color: black;
+      color: rgb(255, 255, 255);
+      cursor: pointer;
+    }
+  }
+
+  .pages {
+    display: flex;
+    align-items: center;
+    ul {
+      display: flex;
+
+      li {
+        list-style-type: none;
+        padding: 25px;
+        cursor: pointer;
+
+        &:active {
+          font-size: 20px;
+          background-color: rgb(232, 227, 227);
+        }
+      }
+    }
+    svg {
+      width: 20px;
+      height: 20px;
+    }
+  }
+}
